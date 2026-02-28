@@ -5,21 +5,21 @@
 class NickaiCli < Formula
   desc "Conversational trading terminal for autonomous finance"
   homepage "https://github.com/frankybeatz/nickai-cli"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/frankybeatz/nickai-cli/releases/download/v0.4.0/nickai-darwin-amd64.tar.gz"
-      sha256 "4e38f6c8892f2b0d6d7ec2c08d84bff6c4da0e075bf7c7d2d4e7f9acb7c6ccff"
+      url "https://github.com/frankybeatz/nickai-cli/releases/download/v0.5.0/nickai-darwin-amd64.tar.gz"
+      sha256 "bd0ffffd71d163713477b08274365e45f43703a1547d89984a8ccc02c2dde826"
 
       define_method(:install) do
         bin.install "nickai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/frankybeatz/nickai-cli/releases/download/v0.4.0/nickai-darwin-arm64.tar.gz"
-      sha256 "de47b250709ee724bf5c32677c5d7976564e4252db7a408610e73beb7df619f1"
+      url "https://github.com/frankybeatz/nickai-cli/releases/download/v0.5.0/nickai-darwin-arm64.tar.gz"
+      sha256 "0184952deac97616e6c90f5fe0031ca6ca0549bdbf70ba5981b820bd88a5fa1c"
 
       define_method(:install) do
         bin.install "nickai"
@@ -29,15 +29,15 @@ class NickaiCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/frankybeatz/nickai-cli/releases/download/v0.4.0/nickai-linux-amd64.tar.gz"
-      sha256 "9b2f3569eebc69213813af4359da438bbbd3801d859afee21dfbe69cecb0876c"
+      url "https://github.com/frankybeatz/nickai-cli/releases/download/v0.5.0/nickai-linux-amd64.tar.gz"
+      sha256 "9b22cf961c9d0545adc1997a8d402efb3b7cbc57679bc129426823d96e8da3aa"
       define_method(:install) do
         bin.install "nickai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/frankybeatz/nickai-cli/releases/download/v0.4.0/nickai-linux-arm64.tar.gz"
-      sha256 "29653054ce0856cfad9043344d787487170032d2cee2c2f93edd9504ceea68ea"
+      url "https://github.com/frankybeatz/nickai-cli/releases/download/v0.5.0/nickai-linux-arm64.tar.gz"
+      sha256 "b297e3a03ff57d331d70f9cf5ec56de34cc356964339833d65d333de4ff22c6e"
       define_method(:install) do
         bin.install "nickai"
       end
